@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>4 Patas</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+		<header>
+		<nav class="navbar">
+			<a href="index.html" class="logo">
+				<img src="imagens/Logo.png" alt="Logo 4 Patas" class="logo-img">
+			</a>
+			<ul class="nav-links">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="quem-somos.html">Quem Somos</a></li>
+				<li><a href="ajude.html">Ajude</a></li>
+				<li><a href="adote.html">Adote</a></li>
+				<li><a href="cadastro.html">Cadastro</a></li>
+				<li><a href="projeto.html">Projetos</a></li>
+			</ul>
+		</nav>
+		
+		</header>
+
+		<main class="formulario-container">
+			<h2>Formulário de Interesse para Adoção</h2>
+			<p>Ficamos felizes com seu interesse! Por favor, preencha os dados abaixo com atenção.</p>
+			
+			<form action="#" method="POST">
+				<fieldset>
+					<legend>Seus Dados Pessoais</legend>
+					<div class="form-group">
+						<label for="nome">Nome Completo</label>
+						<input type="text" id="nome" name="nome" required>
+					</div>
+
+					<div class="form-group">
+						<label for="email">E-Mail</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+
+					<div class="form-group">
+						<label for="telefone">Telefone (com DDD)</label>
+						<input type="tel" id="telefone" name="telefone">
+					</div>
+
+					<div class="form-group">
+	                    <label for="cidade">Cidade / Estado</label>
+	                    <input type="text" id="cidade" name="cidade" placeholder="Ex: Rio de Janeiro  / RJ" required>
+	                </div>
+	            </fieldset>
+
+	            <fieldset>
+	                <legend>Sobre sua Moradia</legend>
+	                <div class="form-group">
+	                    <label>Tipo de residência:</label>
+	                    <div class="radio-group">
+	                        <input type="radio" id="casa" name="residencia" value="casa"> <label for="casa">Casa</label>
+	                        <input type="radio" id="apartamento" name="residencia" value="apartamento"> <label for="apartamento">Apartamento</label>
+	                    </div>
+	                </div>
+	                <div class="form-group">
+	                    <label>Sua residência possui telas de proteção (para gatos) ou muros/portões seguros (para cães)?</label>
+	                    <div class="radio-group">
+	                        <input type="radio" id="seguranca-sim" name="seguranca" value="sim"> <label for="seguranca-sim">Sim</label>
+	                        <input type="radio" id="seguranca-nao" name="seguranca" value="nao"> <label for="seguranca-nao">Não</label>
+	                    </div>
+	                </div>
+	            </fieldset>
+
+	            <fieldset>
+	                <legend>Sua Rotina e Experiência</legend>
+	                <div class="form-group">
+	                    <label for="horas-sozinho">Em média, quantas horas por dia o animal ficaria sozinho?</label>
+	                    <input type="text" id="horas-sozinho" name="horas-sozinho" required>
+	                </div>
+	                <div class="form-group">
+	                    <label for="motivacao">Por que você deseja adotar um animal?</label>
+	                    <textarea id="motivacao" name="motivacao" rows="4" required></textarea>
+	                </div>
+	            </fieldset>
+
+	            <button type="submit" class="botao-submit">Enviar Formulário</button>
+			</form>
+		</main>
+
+		<footer>
+		    <div class="footer-container">
+		        
+		        <div class="footer-coluna">
+		            <img src="imagens/Logo.png" alt="Logo 4 Patas" class="footer-logo">
+		            <p>Uma organização sem fins lucrativos dedicada a resgatar, reabilitar e encontrar lares amorosos para animais em risco.</p>
+		        </div>
+
+		        <div class="footer-coluna">
+		            <h4>Navegue</h4>
+		            <ul>
+		                <li><a href="index.html">Início</a></li>
+		                <li><a href="quem-somos.html">Quem Somos</a></li>
+		                <li><a href="adote.html">Adote</a></li>
+		                <li><a href="ajude.html">Ajude</a></li>
+		                <li><a href="projeto.html">Projetos</a></li>
+		            </ul>
+		        </div>
+
+		        <div class="footer-coluna">
+		            <h4>Contato</h4>
+		            <p>contato@4patas.org.br</p>
+		            <p>(21) 99999-9999</p>
+		            <p>Rua Fictícia, 123<br>Rio de Janeiro, RJ</p>
+		        </div>
+
+		        <div class="footer-coluna">
+		            <h4>Siga-nos</h4>
+		            <div class="redes-sociais">
+		                <a href="#"> <img src="imagens/icon-instagram.png" alt="Instagram"> </a>
+		                <a href="#"> <img src="imagens/icon-facebook.png" alt="Facebook"> </a>
+		                <a href="#"> <img src="imagens/icon-x.png" alt="X"> </a>
+		                <a href="#"> <img src="imagens/icon-tiktok.png" alt="Tik Tok"> </a>
+		            </div>
+		        </div>
+
+		    </div>
+		    <div class="footer-copyright">
+		        <p>© 2025 4 Patas. Todos os direitos reservados. Projeto acadêmico.</p>
+		    </div>
+		</footer>
+
+		<script src="script.js"></script>
+</body>
+</html>

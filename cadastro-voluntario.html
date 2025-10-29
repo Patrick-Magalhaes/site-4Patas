@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de Voluntário - 4 Patas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="imagens/Logo.png" alt="Logo 4 Patas" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="ajude.html">Ajude</a></li>
+                <li><a href="adote.html">Adote</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="projeto.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="formulario-container">
+        <h2>Cadastro de Voluntário</h2>
+        <p class="subtitulo-form">Que bom ter você aqui! Preencha seus dados para fazer parte da nossa equipe.</p>
+        
+        <form id="form-voluntario" action="#" method="POST">
+            <fieldset>
+                <legend>Seus Dados Pessoais</legend>
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone (com DDD)</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sua Disponibilidade</legend>
+                <div class="form-group">
+                    <label>Quais dias da semana você tem disponibilidade?</label>
+                    <div class="checkbox-group">
+                        <div><input type="checkbox" id="seg" name="dias" value="segunda"><label for="seg">Segunda</label></div>
+                        <div><input type="checkbox" id="ter" name="dias" value="terca"><label for="ter">Terça</label></div>
+                        <div><input type="checkbox" id="qua" name="dias" value="quarta"><label for="qua">Quarta</label></div>
+                        <div><input type="checkbox" id="qui" name="dias" value="quinta"><label for="qui">Quinta</label></div>
+                        <div><input type="checkbox" id="sex" name="dias" value="sexta"><label for="sex">Sexta</label></div>
+                        <div><input type="checkbox" id="sab" name="dias" value="sabado"><label for="sab">Sábado</label></div>
+                        <div><input type="checkbox" id="dom" name="dias" value="domingo"><label for="dom">Domingo</label></div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Áreas de Interesse</legend>
+                <div class="form-group">
+                    <label>Em quais áreas você gostaria de ajudar?</label>
+                    <div class="checkbox-group">
+                        <div><input type="checkbox" id="passeios" name="interesse" value="passeios"><label for="passeios">Passear com cães</label></div>
+                        <div><input type="checkbox" id="limpeza" name="interesse" value="limpeza"><label for="limpeza">Limpeza e organização</label></div>
+                        <div><input type="checkbox" id="eventos" name="interesse" value="eventos"><label for="eventos">Feiras de adoção</label></div>
+                        <div><input type="checkbox" id="fotos" name="interesse" value="fotos"><label for="fotos">Fotografia e divulgação</label></div>
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="experiencia">Conte-nos um pouco sobre sua experiência com animais (se houver).</label>
+                    <textarea id="experiencia" name="experiencia" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="botao-submit">Enviar Cadastro</button>
+        </form>
+    </main>
+
+		<footer>
+		    <div class="footer-container">
+		        
+		        <div class="footer-coluna">
+		            <img src="imagens/Logo.png" alt="Logo 4 Patas" class="footer-logo">
+		            <p>Uma organização sem fins lucrativos dedicada a resgatar, reabilitar e encontrar lares amorosos para animais em risco.</p>
+		        </div>
+
+		        <div class="footer-coluna">
+		            <h4>Navegue</h4>
+		            <ul>
+		                <li><a href="index.html">Início</a></li>
+		                <li><a href="quem-somos.html">Quem Somos</a></li>
+		                <li><a href="adote.html">Adote</a></li>
+		                <li><a href="ajude.html">Ajude</a></li>
+		                <li><a href="projeto.html">Projetos</a></li>
+		            </ul>
+		        </div>
+
+		        <div class="footer-coluna">
+		            <h4>Contato</h4>
+		            <p>contato@4patas.org.br</p>
+		            <p>(21) 99999-9999</p>
+		            <p>Rua Fictícia, 123<br>Rio de Janeiro, RJ</p>
+		        </div>
+
+		        <div class="footer-coluna">
+		            <h4>Siga-nos</h4>
+		            <div class="redes-sociais">
+		                <a href="#"> <img src="imagens/icon-instagram.png" alt="Instagram"> </a>
+		                <a href="#"> <img src="imagens/icon-facebook.png" alt="Facebook"> </a>
+		                <a href="#"> <img src="imagens/icon-x.png" alt="X"> </a>
+		                <a href="#"> <img src="imagens/icon-tiktok.png" alt="Tik Tok"> </a>
+		            </div>
+		        </div>
+
+		    </div>
+		    <div class="footer-copyright">
+		        <p>© 2025 4 Patas. Todos os direitos reservados. Projeto acadêmico.</p>
+		    </div>
+		</footer>
+
+		<script src="script.js"></script>
+</body>
+</html>
