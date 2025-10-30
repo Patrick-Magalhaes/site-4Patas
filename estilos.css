@@ -44,6 +44,54 @@
 	background-color: #DEB887;
 }
 
+.hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 28px; 
+    cursor: pointer;
+    color: green; 
+}
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        position: relative; 
+    }
+
+    .nav-links {
+        display: none; 
+        position: absolute; 
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: #FFE4C4; 
+        flex-direction: column; 
+        align-items: center; 
+        padding: 20px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        z-index: 1000; 
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-bottom: 15px;
+    }
+
+    .hamburger {
+        display: block; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-img {
+        height: 80px; 
+    }
+}
+
 .banner-principal{
 	background-image: url('imagens/teste.png');
 	background-size: cover;
@@ -134,7 +182,7 @@ body {
 }
 
 .quem-somos-texto h3{
-	font-family: "Poppins" sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: black;
 	font-weight: normal;
 	margin-bottom: 20px;
@@ -229,7 +277,6 @@ body {
 	font-weight: bold;
 	border-radius: 5px;
 	color: white;
-	white-space: nowrap;
 	transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -459,7 +506,7 @@ footer {
 }
 
 .historia-texto h3{
-	font-family: "Poppins" sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: #005C00;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -504,7 +551,7 @@ footer {
 }
 
 .missao-texto h3{
-	font-family: "Poppins" sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: #005C00;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -576,7 +623,7 @@ footer {
 }
 
 .equipe-texto h3{
-	font-family: "Poppins" sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: #005C00;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -607,6 +654,7 @@ footer {
 	font-size: 2.5em;
 	margin: 0;
 	color: white;
+
 }
 
 .banner-ajude p{
@@ -674,15 +722,28 @@ footer {
     height: auto;
 }
 
-
-
 .boleto-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px; 
-    max-width: 350px; 
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	max-width: 100%; 
+	margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+    .opcoes-container {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 60px; 
+    }
+    .doacao-pix, .doacao-boleto {
+        width: 100%; 
+        max-width: 350px; 
+    }
+    .boleto-grid {
+        max-width: 100%; 
+    }
+}
 
 .botao-valor {
     display: block;
@@ -874,12 +935,14 @@ footer {
     gap: 40px; 
     margin: 40px 0;
     flex-wrap: wrap; 
+    padding: 0 20px;
 }
 
 .filtro-grupo {
     display: flex;
     align-items: center;
     gap: 10px; 
+    flex-wrap: wrap;
 }
 
 .filtro-titulo {
@@ -1404,4 +1467,32 @@ input:focus, textarea:focus {
 .botao-apoio:hover{
 	box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 	background-color: #004000;
+}
+
+
+@media (max-width: 768px) {
+
+.quem-somos-container,
+.historia-linha,
+.equipe-linha,
+.voluntario-container,
+.castracao-container,
+.gatil-container,
+.mutirao-container {
+	flex-direction: column; 
+ 	gap: 30px;
+ }
+
+ .quem-somos-texto,
+.historia-texto,
+.equipe-texto,
+.castracao-texto,
+.gatil-texto,
+.mutirao-texto {
+	text-align: center;
+	 padding: 15px; 
+ }
+
+.botao-saiba-mais {
+	align-self: center;
 }

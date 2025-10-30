@@ -7,24 +7,28 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
 		<header>
 		<nav class="navbar">
-			<a href="index.html" class="logo">
-				<img src="imagens/Logo.png" alt="Logo 4 Patas" class="logo-img">
-			</a>
-			<ul class="nav-links">
-				<li><a href="index.html">Início</a></li>
-				<li><a href="quem-somos.html">Quem Somos</a></li>
-				<li><a href="ajude.html">Ajude</a></li>
-				<li><a href="adote.html">Adote</a></li>
-				<li><a href="cadastro.html">Cadastro</a></li>
-				<li><a href="projeto.html">Projetos</a></li>
-			</ul>
+			    <a href="index.html" class="logo">
+			        <img src="imagens/Logo.png" alt="Logo 4 Patas" class="logo-img">
+			    </a>
+
+			    <button class="hamburger" id="hamburger-button" aria-label="Abrir menu">
+			        &#9776; </button>
+
+			    <ul class="nav-links" id="nav-links-list">
+			        <li><a href="index.html">Início</a></li>
+			        <li><a href="quem-somos.html">Quem Somos</a></li>
+			        <li><a href="ajude.html">Ajude</a></li>
+			        <li><a href="adote.html">Adote</a></li>
+			        <li><a href="cadastro.html">Cadastro</a></li>
+			        <li><a href="projeto.html">Projetos</a></li> 
+			    </ul>
 		</nav>
 		
 		</header>
@@ -35,7 +39,7 @@
 
 		</section>
 
-		<section class="filtros">
+		<div class="filtros">
 			<div class="filtros-container">
 				<div class="filtro-grupo">
 					<span class="filtro-titulo">Espécie:</span>
@@ -52,9 +56,9 @@
         		</div>
 			</div>
 			
-		</section>
+		</div>
 
-		<section class="galeria-adocao">
+		<div class="galeria-adocao">
 			<div class="galeria-container">
 				<div class="animal-card" data-especie="cao" data-genero="femea">
 					<img src="imagens/Peróla.png" alt="Peróla">
@@ -167,7 +171,7 @@
 				</div>
 
 			</div>
-		</section>
+		</div>
 
 		<section class="processo-adocao">
 			<h2>Como Adotar</h2>
